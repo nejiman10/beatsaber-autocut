@@ -65,7 +65,7 @@ Requirements:
 Install with `uv`:
 
 ```bash
-git clone <repository-url>
+git clone git@github.com:nejiman10/beatsaber-autocut.git
 cd beatsaber-autocut
 uv sync
 ```
