@@ -1,6 +1,8 @@
 # Beat Saber Auto Clip Tool
 
-Automatically extract Beat Saber clips from long OBS recordings using session data from the DataRecorder SQLite database.
+Automatically extract Beat Saber clips from long recordings by matching Beat Saber play sessions to OBS footage using DataRecorder SQLite logs.
+
+Designed for players who record full play sessions and want quick clip extraction.
 
 ## Demo
 
@@ -117,9 +119,15 @@ You can repeat `--start-time` multiple times to export more than one exact sessi
 
 ## Development
 
-This project was developed with the help of OpenAI Codex.
+OpenAI Codex was used during development of this project.
 
-Codex assisted with implementation, refactoring, and test scaffolding. Architecture, requirements, review, and final decisions were made by the project author.
+Codex assisted with implementation, refactoring, and test scaffolding. The project author defined the requirements, made the architecture decisions, reviewed the results, and made all final decisions on the shipped code and documentation.
+
+## Acknowledgements
+
+This tool is built around the Beat Saber gameplay ecosystem and the workflows of players who record sessions for later review and clipping.
+
+It relies on DataRecorder for the SQLite gameplay logs used to identify play sessions, and uses FFmpeg for clip cutting and encoding. Thanks to the developers and maintainers of Beat Saber, [DataRecorder](https://github.com/rynan4818/DataRecorder), and FFmpeg for the work that makes this tool possible.
 
 ## License
 
