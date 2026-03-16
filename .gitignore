@@ -1,0 +1,16 @@
+# Beat Saber recordings
+movie/
+
+# generated clips
+clips/
+
+# local config
+config.toml
+
+# python
+__pycache__/
+*.pyc
+
+# environments
+.venv/
+.env

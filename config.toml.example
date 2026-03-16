@@ -1,0 +1,56 @@
+# Beat Saber Auto Clip Tool example configuration.
+#
+# Relative paths are resolved relative to this file.
+
+[paths]
+db = "/path/to/beatsaber.db"
+videos = "/path/to/obs/videos"
+output = "./clips"
+
+[cut]
+mode = "song"
+pre_roll = 6.0
+post_roll = 4.0
+time_offset = 0.0
+
+[filter]
+include_cleared = []
+exclude_cleared = []
+include_ranks = []
+exclude_ranks = []
+min_score = 0
+include_song_names = []
+exclude_song_names = []
+include_difficulties = []
+exclude_difficulties = []
+include_start_times = []
+exclude_start_times = []
+
+[video]
+extensions = ["mkv", "mp4"]
+
+[output]
+format = "mp4"
+filename_template = "{song} [{difficulty}] {rank} {score}"
+
+[organize]
+enabled = true
+path_template = "{song}/{difficulty}"
+
+[ffmpeg]
+ffmpeg_bin = "ffmpeg"
+ffprobe_bin = "ffprobe"
+mode = "reencode"
+video_codec = "libx264"
+audio_codec = "aac"
+crf = 18
+preset = "fast"
+extra_input_args = []
+extra_output_args = []
+
+[run]
+dry_run = false
+overwrite = false
+
+[select]
+recent_limit = 20
