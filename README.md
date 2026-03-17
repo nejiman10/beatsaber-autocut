@@ -131,4 +131,4 @@ It relies on DataRecorder for the SQLite gameplay logs used to identify play ses
 
 ## License
 
-License information to be added.
+MIT License. See `LICENSE` for details.

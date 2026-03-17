@@ -4,9 +4,8 @@ version = "0.1.0"
 description = "Automatic Beat Saber clip extraction from DataRecorder logs"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = [
-    "pytest>=9.0.2",
-]
+license = "MIT"
+dependencies = []
 
 [project.scripts]
 bs-autocut = "bs_autocut.cli:main"
